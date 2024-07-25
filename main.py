@@ -1,49 +1,72 @@
-#run without debugging
-print("Programacion 3")
-print("------------------------- DECLARANDO VARIABLES----------------------------")
-#declarando una variable
-variable1 = "valor"
-variable2 = 20
-variable3 = 12.2
-variable4 = True
-variable5 = [12,4,79,23,41]
-print("-------------------------- OPERADORES ARITMETICOS---------------------------")
-#Operadores aritmeticos + - * / // ** %
+nombre = "Nelson"
+apellido = "Alvarenga"
+nombre2 = "nelson alvarenga"
 
-num1 = 20
-num2 = 3
+#F-String 
+print("Hola, mi nombre es", nombre + " y mi apellido es", apellido)
 
-divisionEntera = print(num1//num2)
-reiduoDivision = print(num1%num2)
+#title()
+print("mi nombre usando title se veria asi: ",nombre2.title())
 
-print("------------------------ AND -----------------------------")
-#Operadores logicos and, or, not
+#replicacion
+variable = "Hola"
+print(variable*10)
 
-print(True and True)
-print(True and False)
-print(False and False)
-print(False and True)
+#funcion (def)
+def Saludar():
+    print("Hola Mundo")
+Saludar()
 
-print("--------------------------- OR --------------------------")
-print(True or True)
-print(True or False)
-print(False or False)
-print(False or True)
+#Parametros y Argumentos
 
-#Operadores de comparacion <> <= => == =!
-print("-------------------------- OPERADORES COMPARACION---------------------------")
-print(9<10)
-print(10>10)
-print("Python" == "Python")
 
-print("---------------------------- CALCULAR EL AREA DE UN TRIANGULO-------------------------")
-base = input("Ingrese la base: ")
-altura = input("Ingrese la altura: ")
-area = print("El area del triangulo es: ", (float(base)*float(altura))/2)
 
-print("---------------------------- CONVERTIR C a F-------------------------")
 
-C = float(input("Ingrese los grados en celsius: "))
-Farenheit = print("Los grados " , C , "convertido a farenheit son: ", ((C * 9/5) + 32))
+#funcion (def)
+def Saludar():
+    print("Hola Mundo")
+Saludar()
+
+
+def doblar_valor(numero): #numero seria parametro
+    n2 = numero*2
+    return n2
+print(doblar_valor(6)) #6 es el argumento
+
+#2 parametros hay que pasarle 2 argumentos 
+def describir(tipom, nombrem):
+    print(f"Mi mascota es un {tipom} y se llama {nombrem}")
+describir("Loro", "Pancho")
+
+#Argumentos "keyword"
+def describir(tipom, nombrem):
+    print(f"Mi mascota es un {tipom} y se llama {nombrem}")
+describir(nombrem = "Pancho", tipom = "loro")
+
+#parametros default se tienen que declarar por ultimo
+def describir(tipom, nombrem="Pancho"):
+    print(f"Mi mascota es un {tipom} y se llama {nombrem}")
+describir("Perro")
+
+#Parametros *args y **args, reciben n cantidad de parametros es decir cualquier cantidad que sea necesaria 
+def inf(nombre,carnet, carrera,*materias):
+    print(f"Informe del estudiante {nombre} con carnet {carnet} y de la carrera {carrera}, lleva las materias de: ")
+    for materia in materias:
+        print(f"*{materia}")
+inf("Nelson", "SMSS127921","ING SISTEMAS","Ingles Basico","Circuitos Digitales","Programacion","Base de datos","Estadistica")
+
+#valor de retorno, es un tipo de valor que la funcion puede llegar a generar
+def doblar_valor(numero): 
+    n2 = numero*2
+    return n2
+print(doblar_valor(6)) 
+
+def mult():
+    total = 3*5
+    return total
+
+print("Ingresa un valor que quieras multiplicar por 15")
+valor = float(input())
+print(valor*mult())
 
 
