@@ -1,21 +1,21 @@
-class Articulo:
+class Articulo: #clase con su contructor y el formato de mostrar la info
     def __init__(self, tipo, marca, precio_compra, precio_venta):
         self.tipo = tipo
         self.marca = marca
         self.precio_compra = precio_compra
         self.precio_venta = precio_venta
 
-    def mostrar_info(self):
+    def mostrar_info(self): #fucnion del formato
         print(f"Artículo: {self.tipo}")
         print(f"Marca: {self.marca}")
         print(f"Precio de Compra: ${self.precio_compra}")
         print(f"Precio de Venta: ${self.precio_venta}")
         print("-" * 30)
 
-def calcular_precio_venta(precio_compra, margen=1.30):
+def calcular_precio_venta(precio_compra, margen=1.30): #calcular el precio de venta
     return precio_compra * margen
 
-def ingresar_articulo():
+def ingresar_articulo(): #inputs del usuario
     print("Seleccione el tipo de artículo que desea registrar:")
     print("1. Cuaderno")
     print("2. Lápiz")

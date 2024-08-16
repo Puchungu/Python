@@ -14,7 +14,7 @@ class Auto: #clase auto con su constructor y una para mostrar la informacion
         self.ruedas = "4 ruedas"
 
 
-    def mostrar_info(self):
+    def mostrar_info(self): #funcion para el formato de mostar los datos
         print("-" * 30)
         print(f"modelo: {self.modelo}")
         print(f"marca: {self.marca}")
@@ -29,7 +29,7 @@ class Auto: #clase auto con su constructor y una para mostrar la informacion
         print(f"Precio de Venta: ${self.precio_venta}")
         print("-" * 30)
 
-def ingresar_autos():
+def ingresar_autos(): #inputs del usuario
     modelo = input("Ingrese el modelo del auto: ")
     tipo = input("Ingrese el tipo del auto: ")
     marca = input("Ingrese la marca del auto: ")
@@ -43,20 +43,20 @@ def ingresar_autos():
     precio_venta = calcular_precio_venta(precio_compra)
     return Auto(modelo, tipo, marca, ano, kilometraje, precio_venta, color, transmision, placa, traccion)
 
-def calcular_precio_venta(precio_compra, margen=1.4):
+def calcular_precio_venta(precio_compra, margen=1.4): #funcion para calcular el precio de venta
     precio_venta = precio_compra * margen
     return precio_venta
 
 # lista global
 autos = []
 
-def mostrar_autos(autos):
+def mostrar_autos(autos): #fucnion para mostrar los autos 
     print("\nAutos registrados:")
     for autos in autos:
         autos.mostrar_info()
 
 
-def menu_principal():
+def menu_principal(): #funcion para el menu principal
     while True:
         opcion = int(input("Ingrese la opcion que desea hacer: \n Opcion 1: Ingresar auto \n Opcion 2: Mostrar Autos \n Opcion 3: Salir \n"))
         if opcion == 1:
@@ -68,7 +68,7 @@ def menu_principal():
             print("Gracias por utilizar el sistema")
             break
 
-menu_principal()
+menu_principal() #ejecutar la funcion menu principal
 
             
 
