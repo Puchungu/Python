@@ -22,6 +22,7 @@ class mainwindow(QMainWindow):
         #creamos los widgets 
         self.lbl= QLabel("Introduce tu clave secreta: ")
         self.editPsw = QLineEdit()
+        #echomode para ocultar
         self.editPsw.setEchoMode(QLineEdit.Password)
         self.button = QPushButton("Leer clave")
         self.lblResult = QLabel("")

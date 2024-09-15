@@ -6,7 +6,7 @@ class mainwindow(QMainWindow):
         super().__init__()
         self.setWindowTitle("Ejercicio 5")
 
-        # Lista para almacenar las características de 3 mascotas
+        # Lista para almacenar las características 
         self.caracteristicas = []
 
         # Widget central
@@ -50,7 +50,7 @@ class mainwindow(QMainWindow):
             self.caracteristicas.append(Caract)
             
 
-            # Mostrar las mascotas almacenadas
+            # Mostrar las caracteristicas almacenadas
             self.mostrarCaracteristicas()
 
         else:
