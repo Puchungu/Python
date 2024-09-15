@@ -1,7 +1,7 @@
 # Python
 Programacion Computacional III - Python 
 
-Integrantes:
+Integrantes: <br>
 Nelson Oswaldo Alvarenga Cuadra <br>
 Daniel Jouse Joya Majano <br>
 
