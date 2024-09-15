@@ -6,6 +6,13 @@ se necesita una pequeña aplicación que permita al cajero seleccionar rápidame
 el tipo de bplatillo (usando un ComboBox), la cantidad de cada uno (usando un SpinBox), 
 """
 
+"""
+Como podemos observar este codigo presenta un ComboBox y un Spinbox, el primero mostrando los diferentes platillos en el menu
+y el segundo mostrando la cantidad de cada platillo que se puede pedir, facilitando al cajero la seleccion mejorando la rapidez de la atencion 
+despues muestra el desgloce de la cantidad y que platillo selecciona el cliente, esto da una claridad en la informacion al cliente y una satisfaccion
+al ser atendido de manera rapida
+"""
+
 from PyQt5.QtWidgets import (QApplication, QWidget, QMainWindow, QLabel, QVBoxLayout,QComboBox,QSpinBox,QPushButton)
 import sys
 
