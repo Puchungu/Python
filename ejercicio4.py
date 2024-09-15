@@ -4,7 +4,7 @@ import sys
 class mainwindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Ejercicio 3")
+        self.setWindowTitle("Ejercicio 4")
 
         # Lista para almacenar las características de 3 mascotas
         self.mascotas = []

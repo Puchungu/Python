@@ -4,7 +4,7 @@ import sys
 class mainwindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Label centrado")
+        self.setWindowTitle("Ejercicio 1")
 
         #widget central
         central = QWidget()
