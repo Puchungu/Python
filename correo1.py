@@ -12,7 +12,7 @@ try:
     conex = smtplib.SMTP(serv,puerto)
     conex.starttls()
     conex.login(remitente,contrasena)
-    conex.sendmail(remitente,destinatario,"Subject: Probando correo" + "\n\n Este correo es automatico usando la libreria smtplib")
+    conex.sendmail(remitente,destinatario,"Subject: Maricon" + "\n\n Este correo es automatico usando la libreria smtplib")
     print("El correo se ha mandado correctamente")
 except smtplib.SMTPException as e:
     print(f"Error al mandar el mensaje: {e}")
