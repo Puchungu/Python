@@ -1,14 +1,14 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-df = pd.read_csv("malenia.csv")
+df = pd.read_csv("malenia.csv") #se lee el csv y se asigna a df
 print(df)
-frecuencia = df["Level"].value_counts().sort_index() #sort_index para ordenar los niveles
-plt.plot(frecuencia.index, frecuencia.values)
-plt.title('Niveles del host')
-plt.xlabel('Nivel')
-plt.ylabel('Frecuencia')
-plt.show()
+frecuencia = df["Level"].value_counts().sort_index() #sort_index para ordenar los niveles en orden ascendete y con value_counts se saca la freuencia de la columna Level
+plt.plot(frecuencia.index, frecuencia.values) #se asigna el eje x a indices y "Y" a la frecuencia y se crea el grafico 
+plt.title('Niveles del host') #titulo de la grafica
+plt.xlabel('Nivel') #label eje x
+plt.ylabel('Frecuencia') #label eje y
+plt.show() #mostrar la grafica
 
 """
 La gráfica muestra la frecuencia del nivel del host en el juego que ha muerto contra Malenia (un jefe del juego).
